@@ -10347,17 +10347,18 @@ section .container-2 .contactinfo  .sci li:hover a .contact-img {
 }
 .inputBox input , textarea{
     width: 100% !important;
-    padding: 5px 0px;
+    padding: 20px 0px;
     font-size: 18px;
+    font-family:'Louis George Café', sans-serif ;
     resize: none;
     font-weight: 300;
-    color: #333;
+    color: black;
     border: none;
     border-bottom: 1px solid #777;
     outline: none;
 }
 .inputBox textarea{
-    min-height: 100px;
+    min-height: 120px;
 }
 .inputBox span{
     position: absolute;
@@ -10370,12 +10371,13 @@ section .container-2 .contactinfo  .sci li:hover a .contact-img {
     pointer-events: none;
 
 }
-.inputBox input:focus ~ span , textarea:focus ~ span
+.inputBox input:focus ~ span , textarea:focus ~ span ,
 .inputBox input:valid ~ span , textarea:valid ~ span 
+
 {
      transform: translate(-20px);
      font-size: 12px;
-     font-weight: 400;
+     font-weight: 500;
      letter-spacing: 1px;
      color: #10b7ee;
 
