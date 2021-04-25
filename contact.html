@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="styles.css">
     <link href="http://fonts.cdnfonts.com/css/lemonmilk" rel="stylesheet">
     <link href="http://fonts.cdnfonts.com/css/louis-george-cafe" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body class="body-contact">
     <div class="header-background-3 ">
@@ -60,9 +62,11 @@
           </nav> 
           </div> 
           <div class="text-box">
+            <div data-aos="zoom-out">
             <h1 class="heading-2">Let’s make something awesome together.</h1>
             <h3 class="contact-us3">Drop us a line, or give us a heads up if you’re interested in visiting us.</h3>
-            </div>  
+            </div> 
+            </div> 
         </div>
         <section>
         <div class="container-2">
@@ -91,15 +95,18 @@
                 <h2 class="h2-contact-1">Send a Message</h2>
                 <div class="formBox">
                     <div class="inputBox w50">
-                        <input type="text"  required>
+                        <input type="text" name="name" required>
+                        <span id="errorNom"></span>
                         <span>First Name</span>
                     </div>
                     <div class="inputBox w50">
-                        <input type="text"  required>
+                        <input type="text" name="lastname"  required>
+                        <span id="errorPrenom"></span>
                         <span>Last Name</span>
                     </div>
                     <div class="inputBox w50">
-                        <input type="text"  required>
+                        <input type="text"  name="email" required>
+                        <span id="errorEmail"></span>
                         <span>Email Address</span>
                     </div>
                     <div class="inputBox w50">
@@ -118,6 +125,8 @@
         </div>
     </section>
     <footer id="footer" class="footer-1">
+      <div data-aos="fade-up"
+      data-aos-anchor-placement="top-center">
       <div class="footer-2">
       <div class="main-footer widgets-dark typo-light">
       <div class="container">
@@ -187,10 +196,13 @@
       </div>
       </div>
   </div>
+  </div>
       </footer>
   <a href="#" class="gotopbtn">
       <img src="img/fleche.png" class="fleche-img">
   </a>
-
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

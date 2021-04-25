@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="styles.css">
     <link href="http://fonts.cdnfonts.com/css/lemonmilk" rel="stylesheet">
     <link href="http://fonts.cdnfonts.com/css/louis-george-cafe" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
 <div class="header-background ">
@@ -60,9 +62,11 @@
       </nav>
     </div>
     <div class="text-box">
+      <div data-aos="zoom-in">
     <h1 class="heading">Your career starts here!</h1>
     <a href="#" class="hero-btn" >Start now</a>
-    </div>  
+    </div> 
+    </div> 
 </div>
 <div class="container-fluid">
     <div class="row">
@@ -70,6 +74,7 @@
 
       </div>
        <div class="col-xs-12 col-sm-6 col-lg-6 column-right">
+        <div data-aos="fade-up">
         <h1 class="section-title">About us</h1>
         <p class="paragraphe">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id mi nec 
         nulla interdum maximus. Aliquam pellentesque enim non consectetur porta. Quisque consequat non 
@@ -78,47 +83,63 @@
         eu dignissim mauris pulvinar eget. Praesent elementum, libero dictum pulvinar efficitur, nibh
          neque vehicula est, pellentesque lacinia nibh felis sit amet sem. Morbi in eleifend arcu</p>
         </div>
+        </div>
     </div>
 </div>
 <div class="container-fluid" id="ourservices">
     <div class="row">
         <div class="col-xs-12 col-sm-6 col-lg-6">
+          <div data-aos="fade-up"
+     data-aos-duration="3000">
         <h1 class="service-section">What we do best</h1>
         <p class="paragraphe">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id mi nec nulla 
             interdum maximus. Aliquam pellentesque enim non consectetur porta. Quisque 
             consequat non dui at bibendum. 
         </p>
+        </div>
         <div class="row">
             <div class="col-xs-12 col-sm-6 col-lg-6 service1">
+              <div data-aos="fade-up"
+                 data-aos-duration="3000">
               <h1 class="service-title-1">Web development</h1>
               <p class="service-paragraphe-1">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id mi 
                 nec nulla interdum maximus. Aliquam pellentesque enim non consectetur porta.
               </p>
+              </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-lg-6 service2">
+              <div data-aos="fade-up"
+                data-aos-duration="3000">
                 <h1 class="service-title-2">Graphic design</h1>
                 <p class="service-paragraphe-2">
                   Lorem ipsum dolor sit amet,consectetur adipiscing elit. Nullam id mi nec nulla interdum maximus.
                   Aliquam pellentesque enim non consectetur porta.
                 </p>
+                </div>
             </div>
         </div>
         <div class="row">
             <div class="col-xs-12 col-sm-6 col-lg-6 service1">
+              <div data-aos="fade-up"
+              data-aos-duration="3000">
               <h1 class="service-title-1">Digital marketing</h1>
               <p class="service-paragraphe-1">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id mi 
                 nec nulla interdum maximus. Aliquam pellentesque enim non consectetur porta.
               </p>
+              </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-lg-6 service2">
+              <div data-aos="fade-up"
+               data-aos-duration="3000">
                 <h1 class="service-title-2">Video montage</h1>
                 <p class="service-paragraphe-2">
                   Lorem ipsum dolor sit amet,consectetur adipiscing elit. Nullam id mi nec nulla interdum maximus.
                   Aliquam pellentesque enim non consectetur porta.
                 </p>
+                </div>
             </div>
         </div>
 
@@ -145,6 +166,9 @@
             </div>
         </div>
         <div class="col-xs-12 col-sm-6 col-lg-6">
+          <div data-aos="fade-right"
+           data-aos-offset="300"
+          data-aos-easing="ease-in-sine">
             <div class="row">
                 <div class="text-left-block">
                     <div class="left-center-text">
@@ -186,6 +210,7 @@
                           
                         </div>
                         </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -195,6 +220,10 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-xs-12 col-sm-6 col-lg-6 contact-left">
+          <div data-aos="flip-left"
+           data-aos-easing="ease-out-cubic"
+           data-aos-duration="2000">
+
           <div class="text-left-block">
               <div class="left-center-text">
                   <div class="left-center-part">
@@ -246,16 +275,19 @@
                               </form>
                           </div>
                       </div>
-                      
+                    </div>  
                   </div>
               </div>
           </div>
         </div>
         <div class="col-xs-12 col-sm-6 col-lg-6 contact-right">    
-      </div>
-    </div>
+     </div>
+  </div>
 </div>
 <footer id="footer" class="footer-1">
+  <div data-aos="fade-up"
+     data-aos-anchor-placement="top-center">
+
     <div class="main-footer widgets-dark typo-light">
     <div class="container">
     <div class="row">
@@ -323,9 +355,13 @@
     </div>
     </div>
     </div>
+    </div>
     </footer>
 <a href="#" class="gotopbtn">
     <img src="img/fleche.png" class="fleche-img">
 </a>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>

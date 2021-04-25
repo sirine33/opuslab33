@@ -2945,12 +2945,12 @@ const rond = document.createElement('div');
          rond.remove();
     }, 1500)
  });
- console.log(document.forms["contact-form"])
+ console.log(document.div["contactForm"])
 function validateForm()
 {
-    var nom = document.forms["contact-form"]["name"];
-    var prenom = document.forms[ "contact-form"]["lastname"]               
-    var email = document.forms["contact-form"]["email"];     
+    var nom = document.div["contact-form"]["name"];
+    var prenom = document.div[ "contact-form"]["lastname"]               
+    var email = document.div["contact-form"]["email"];     
     if (verifpn(nom.value))
     {
         document.getElementById('errorNom').innerHTML="Please enter a valid name";

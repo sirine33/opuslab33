@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="styles.css">
     <link href="http://fonts.cdnfonts.com/css/lemonmilk" rel="stylesheet">
     <link href="http://fonts.cdnfonts.com/css/louis-george-cafe" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body class="body-about">
     <div class="header-background-2">
@@ -60,23 +62,36 @@
           </nav>
         </div>
         <div class="text-box">
+          <div data-aos="zoom-out">
         <h1 class="heading">Opus lab story</h1>
         <a href="#" class="hero-btn" >Here We Go</a>
+        </div>
         </div>  
     </div> 
     <div class="container-fluid">
         <div class="row">
+          <div data-aos="fade-up"
+     data-aos-duration="3000">
             <h2>We're More Than Just A Training Company</h2>
+            </div>
             <div class="text-center">
+              <div data-aos="flip-left"
+           data-aos-easing="ease-out-cubic"
+           data-aos-duration="2000">
+
                 <img src="img/aboutus.png" class="rounded" alt="aboutus">
+              </div>
               </div>
         </div>
     </div>
     <div class="container-fluid">
         <div class="row">
             <div class="heading-1">
+              <div data-aos="fade-up"
+              data-aos-duration="3000">
             <h3>A goal without a timeline is just a dream</h3>
             <a href="#" class="hero-btn-1" >Start now</a>
+            </div>
         </div>
         </div>
     </div>
@@ -119,6 +134,8 @@
       <div class="container-fluid">
           <div class="row">
               <div class="h3-1">
+                <div data-aos="fade-up"
+               data-aos-anchor-placement="center-bottom">
               <h3>Our story</h3>
               <p class="paragraphe">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ipsum sollicitudin, 
             viverra magna non, pretium velit. Vivamus congue, magna eget pretium mollis, 
@@ -129,9 +146,11 @@
             <a href="#" class="hero-btn-1" >Read more</a>
             </div>
           </div>
-      </div>
+          </div>
+          </div>
       <div class="container-fluid">
           <div class="row">
+            <div data-aos="flip-left">
               <div class="ourvision">
                   <div class="writnig">
                       <div class="h3-2">
@@ -141,11 +160,14 @@
                     </div>
                   </div>
               </div>
+              </div>
           </div>
       </div>
 <div class="container-fluid">
     <div class="row">
         <div class="col-xs-12 col-sm-6 col-lg-6 values-left ">
+          <div data-aos="fade-up"
+     data-aos-anchor-placement="bottom-bottom">
         <div class="values-section">
         <h1 class="values-section-title">Our values</h1>
         <p class="paragraphe">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -165,6 +187,7 @@
          , quis tristique mauris. In diam libero, ullamcorper sed metus ut, commodo aliquet diam.
           Nunc ut egestas purus.</p>
          </div> 
+     </div>
      </div>
   <div class="col-xs-12 col-sm-6 col-lg-6 values-right">
       <div class="values-items">
@@ -197,6 +220,8 @@
   </div>
 </div>
 <footer id="footer" class="footer-1">
+  <div data-aos="fade-up"
+  data-aos-anchor-placement="top-center">
     <div class="footer-2">
     <div class="main-footer widgets-dark typo-light">
     <div class="container">
@@ -266,9 +291,13 @@
     </div>
     </div>
 </div>
+</div>
     </footer>
 <a href="#" class="gotopbtn">
     <img src="img/fleche.png" class="fleche-img">
 </a>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>

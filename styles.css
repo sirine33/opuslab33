@@ -10244,7 +10244,7 @@ section .container-2 .contactinfo{
     flex-direction: column;
     box-shadow: 0 20px 20px rgba(0,0,0,0.2);
     color: white;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 section .container-2 .contactinfo .h2-contact{
     color: white;
@@ -10313,6 +10313,7 @@ section .container-2 .contactinfo  .sci li:hover a .contact-img {
     padding: 70px 50px;
     background: white;
     margin-bottom: 70px;
+    margin-top: 50px;
     margin-left: 180px;
     padding-left: 350px;
     width: calc(100% - 250px);
@@ -10358,7 +10359,7 @@ section .container-2 .contactinfo  .sci li:hover a .contact-img {
     outline: none;
 }
 .inputBox textarea{
-    min-height: 120px;
+    min-height: 80px;
 }
 .inputBox span{
     position: absolute;
@@ -10421,7 +10422,142 @@ section .container-2 .contactinfo  .sci li:hover a .contact-img {
         opacity: 0;
     }
 }
+@media only screen and (max-width: 600px) {
+     .column-left{
+         display: none;
+     }
+     .our-service-right{
+         display: none;
+     }
+     .portfolio{
+         display: none;
+     }
+     .contact-right{
+         display: none;
+     }
+     .column-right{
+         text-align: center;
+         width: 100%;
+     }
+     .column-right .section-title {
+         padding: 1%;
+         margin-top: 7%;
+     }
+     .column-right .paragraphe{
+         padding: 1%;
+         text-align: center;
+     }
+     .service-section{
+         margin-top: 5%;
+         text-align: center;
+         letter-spacing: 1px;
+         padding: 0;
+     }
+      .paragraphe{
+         text-align: center;
+         padding: 0;
+     }
+      .col-sm-6{
+         width: 100%;
+     }
+     .service-title-1{
+         padding: 0;
+         text-align: center;
+         margin-top: 3%;
+     }
+     .service-paragraphe-1{
+         text-align: center;
+         padding: 0;
+     }
+     .service-title-2 {
+        padding: 0;
+        text-align: center;
+        margin-top: 3%;
+     }
+     .service-paragraphe-2 {
+     padding: 0;
+     text-align: center;
+     }
+     .text-left-block .left-center-text .left-center-part h2{
+        font-size: 2.7rem;
+        text-align: center;
+        padding: 0;
+        margin-top: 7%;
+     }
+     .team-paragraphe {
+     padding: 0;
+     text-align: center;
+     letter-spacing: 1px;
+     margin-top: 4%;
+     }
+     .block-team img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+     }
+     .block-team h3{
+         text-align: center;
+     }
+     .block-team small{
+         text-align: center;
+     }
+     .block-team .paragraph{
+         text-align: center;
+         padding: 0;
+     }
+     .social-media .link-image {
+         display: flex;
+         
+     }
+     .contact-left .paragraph{
+         padding: 0;
+         text-align: center;
+         margin-top: 2%;
+     }
+     #contact-form button#valid-form{
+         padding: 0;
+         margin-top: 10%;
+         border-radius: 10%;
+     }
+     .col-sm-6{
+        width: 100%;
+    }
+    .sticky-nav{
+         padding: 0px; 
 
+    }
+    .rounded{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    .h3-1 .paragraphe{
+
+        padding-left: 0;
+        padding-right:0;
+
+    }
+    .h3-2 .paragraphe{
+        padding-left: 0;
+        padding-right:0;
+    }
+    .values-section .paragraphe{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .paragraphe{
+        padding: 0;
+    }
+    .values-section-title{
+        text-align: center;
+        margin-top: 5%;
+    }
+    .card{
+        width: auto;
+    }
+}
 
 
 
