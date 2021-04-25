@@ -2932,3 +2932,69 @@
     }
     return m("toast", Qe), { Alert: P, Button: I, Carousel: Y, Collapse: X, Dropdown: _e, Modal: ye, Offcanvas: Oe, Popover: Fe, ScrollSpy: Ye, Tab: qe, Toast: Qe, Tooltip: Be };
 });
+window.addEventListener('click', (e) => { 
+     console.log(e);
+
+const rond = document.createElement('div');
+     rond.className = 'clickAnim';
+     rond.style.top = `${e.pageY - 50}px`;
+     rond.style.left = `${e.pageX - 50}px`;
+     document.body.appendChild(rond);
+
+     setTimeout(() => {
+         rond.remove();
+    }, 1500)
+ });
+ console.log(document.forms["contact-form"])
+function validateForm()
+{
+    var nom = document.forms["contact-form"]["name"];
+    var prenom = document.forms[ "contact-form"]["lastname"]               
+    var email = document.forms["contact-form"]["email"];     
+    if (verifpn(nom.value))
+    {
+        document.getElementById('errorNom').innerHTML="Please enter a valid name";
+        document.getElementById('name').style.borderColor="pink" ; 
+        nom.focus();
+    } else{
+        document.getElementById('errorNom').innerHTML="";
+        document.getElementById('name').style.borderColor="white";
+    }
+    if (verifpn(prenom.value))
+    {
+        document.getElementById('errorPrenom').innerHTML="Please enter a valid first name"; 
+        document.getElementById('lastname').style.borderColor="pink"
+
+
+        prenom.focus();
+    } else{
+        document.getElementById('errorPrenom').innerHTML="" ;
+        document.getElementById('lastname').style.borderColor="white";
+
+    }
+  function verifpn(x){
+      let n=0
+      var letters =/^[A-Za-z]+$/;
+      if (x.length==0||!x.match(letters)){
+          return true
+      } else {
+          return false 
+      }
+  }
+  function verife(){
+      if(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.'com')*$/.test(email.value))
+      {
+          return (true)
+      } else {
+          return false 
+      }
+  }
+  if (email.value==""||!verife(email.value)) 
+  {
+    document.getElementById('errorEmail').innerHTML="Please enter a valid email";
+    document.getElementById('lastname').style.borderColor="pink";
+
+  } else {
+    document.getElementById('errorEmail').innerHTML="" ;
+    document.getElementById('email').style.borderColor="white";
+  }
