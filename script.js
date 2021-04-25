@@ -2998,3 +2998,4 @@ function validateForm()
     document.getElementById('errorEmail').innerHTML="" ;
     document.getElementById('email').style.borderColor="white";
   }
+}

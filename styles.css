@@ -10391,8 +10391,8 @@ section .container-2 .contactinfo  .sci li:hover a .contact-img {
 }
 
 .clickAnim {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     background: linear-gradient(to top, #020c32, #0edaf8);    
         position: absolute;
