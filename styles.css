@@ -10309,7 +10309,7 @@ section .container-2 .contactinfo  .sci li:hover a .contact-img {
     opacity: 1;
 }
  .contactForm {
-    position: absolute;
+    position:absolute;
     padding: 70px 50px;
     background: white;
     margin-bottom: 70px;
