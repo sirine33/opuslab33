@@ -10318,11 +10318,13 @@ section .container-2 .contactinfo  .sci li:hover a .contact-img {
     width: calc(100% - 250px);
     box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
 
+
 }
 .h2-contact-1{
     color: #0f3959;
     font-size: 24px;
     font-weight: 500;
+    z-index: 1001;
 }
   .formBox {
     position: relative;
@@ -10337,9 +10339,11 @@ section .container-2 .contactinfo  .sci li:hover a .contact-img {
 }
 .inputBox.w50{
     width: 47%;
+    z-index: 1001;
 }
 .inputBox.w100{
     width: 100%;
+    z-index: 1001;
 }
 .inputBox input , textarea{
     width: 100% !important;
